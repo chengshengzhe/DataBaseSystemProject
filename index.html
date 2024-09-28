@@ -28,6 +28,24 @@
             <a class="optionlistContent" href="LoginSigninPage.html">Login in/Sign in</a>
             <a class="optionlistContent" href="MyStatusPage.html">My status</a>
         </div>
+
+        <!-- 按鈕用來發送測試請求到後端 -->
+        <button id="testButton">Test Request</button>
+
+        <script>
+            // 點擊按鈕發送請求到後端
+            document.getElementById("testButton").addEventListener("click", function() {
+                fetch('http://localhost:3000/api/test')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => alert("Server says: " + data.message))
+                    .catch(error => console.error('Error:', error));
+            });
+    </script>
     </body>
 
 </html>
