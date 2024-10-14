@@ -1,0 +1,26 @@
+.headline{
+    font-size:150%;
+}
+.optionlist{
+    background:gray;
+    font-size:125%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.optionlistContent{
+    margin-right:20px;
+}
+#registration-form,#login-form{
+    margin-bottom:20px;
+    text-align:center;
+}
+input {
+    display: block;
+    margin:5px auto;
+    padding:2px;
+    width:30%;
+}
+body{
+    background:#839a9e;
+}

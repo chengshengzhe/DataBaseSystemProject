@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 圖書系統 </title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <style>
+            button {
+                top:50%;
+                background-color:#0a0a23;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="headline">Welocme to the website</div>
+
+        <!-- 選單類別 -->
+        <div class="optionlist">
+            <a class="optionlistContent" href="../index.html">FrontPage</a>
+            <a class="optionlistContent" href="BookListPage.html">BookList</a>
+            <a class="optionlistContent" href="AccountPage.html">My status</a>
+        </div>
+
+        <!-- 註冊表單 -->
+        <div id="registration-form">
+            <h3>註冊帳號</h3>
+            <input type="UserID" id="reg-ID" placeholder="UserID">
+            <input type="name" id="reg-name" placeholder="Name">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="register()">註冊</button>
+        </div>
+        
+        <hr>
+
+        <!-- 登入表單 -->
+        <div id="login-form">
+            <h3>登入帳號</h3>
+            <input type="UserID" id="login-ID" placeholder="UserID">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">登入</button>
+        </div>
+    </body>
+
+</html>
